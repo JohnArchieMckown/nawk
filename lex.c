@@ -386,7 +386,7 @@ int string(void)
 			case 'b': *bp++ = '\b'; break;
 			case 'v': *bp++ = '\v'; break;
 #ifdef __MVS__
-            case 'a': *bp++ = '\a'; break; #\a is defined in xlc as BEL
+            case 'a': *bp++ = '\a'; break; // \a is defined in xlc as BEL
 #else
 			case 'a': *bp++ = '\007'; break;
 #endif
