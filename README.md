@@ -10,4 +10,6 @@ leaving only the source.
 That was then make the initial commit.
 
 The only real change was in the makefile to define the proper C compiler
-executable and flags. 
+executable and flags. The normal z/OS make command will work. I.e. this 
+distribution does not require any GNU utilities to implement.           
+
