@@ -385,7 +385,11 @@ int string(void)
 			case 'r': *bp++ = '\r'; break;
 			case 'b': *bp++ = '\b'; break;
 			case 'v': *bp++ = '\v'; break;
+#ifdef __MVS__
+            case 'a': *bp++ = '\a'; break; #\a is defined in xlc as BEL
+#else
 			case 'a': *bp++ = '\007'; break;
+#endif
 			case '\\': *bp++ = '\\'; break;
 
 			case '0': case '1': case '2': /* octal: \d \dd \ddd */

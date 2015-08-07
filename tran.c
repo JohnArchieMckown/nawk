@@ -47,7 +47,7 @@ Awkfloat *NR;		/* number of current record */
 Awkfloat *FNR;		/* number of current record in current file */
 char	**FILENAME;	/* current filename argument */
 Awkfloat *ARGC;		/* number of arguments from command line */
-char	**SUBSEP;	/* subscript separator for a[i,j,k]; default \034 */
+char	**SUBSEP;	/* subscript separator for a[i,j,k]; default \034; works for both ASCII & EBCDIC */
 Awkfloat *RSTART;	/* start of re matched with ~; origin 1 (!) */
 Awkfloat *RLENGTH;	/* length of same */
 
