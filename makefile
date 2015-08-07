@@ -25,11 +25,13 @@
 CFLAGS = -g
 CFLAGS = -O2
 CFLAGS =
+CFLAGS = -O2 -D_ALL_SOURCE -qlanglvl=extc99 -qtarg=zosv1r12 -qarch=5 -qtune=7 -D_ISOC99_SOURCE
 
 CC = gcc -Wall -g -Wwrite-strings
 CC = gcc -fprofile-arcs -ftest-coverage # then gcov f1.c; cat f1.c.gcov
 CC = gcc -g -Wall -pedantic 
 CC = gcc -O4 -Wall -pedantic -fno-strict-aliasing
+CC = xlc 
 
 YACC = bison -d -y
 YACC = yacc -d -S
