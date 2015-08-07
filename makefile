@@ -35,6 +35,7 @@ CC = xlc
 
 YACC = bison -d -y
 YACC = yacc -d -S
+YACC = yacc -d -s
 #YFLAGS = -d -S
 		# -S uses sprintf in yacc parser instead of sprint
 
