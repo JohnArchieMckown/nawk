@@ -116,9 +116,9 @@ and by reference if array name; functions may  be  called  recur-
 sively.   Parameters  are  local to the function; all other vari-
 ables are global.  Thus local variables may be created by provid-
 ing excess parameters in the function definition.
-length($0) > 72
+
 Print lines longer than 72 characters.
-{ print $2, $1 }
+length($0) > 72 { print $2, $1 }
 Print first two fields in opposite order.
 BEGIN { FS = ",[ \t]*|[ \t]+" }
       { print $2, $1 }

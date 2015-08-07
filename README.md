@@ -13,3 +13,7 @@ The only real change was in the makefile to define the proper C compiler
 executable and flags. The normal z/OS make command will work. I.e. this 
 distribution does not require any GNU utilities to implement.           
 
+In addition, I created the awk.1.cat file on Linux because the awk.1 file
+is in a markup form which is unusable on z/OS. The command to do so was:
+    groff -T ascii awk.1 >awk.1.cat
+
